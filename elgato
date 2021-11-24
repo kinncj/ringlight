@@ -3,13 +3,14 @@ import os
 import leglight
 import click
 
-# Uncomment the lines below if you want to use the discovery method instead of fixed IP Address.
-# allLights = leglight.discover(2)
-# lght = allLights[0]
-
 # The Ring IP address
 lightIP = os.getenv("ELGATO_RING_LIGHT_IP")
-light   = leglight.LegLight(lightIP,9123)
+
+if lightIP:
+    light = leglight.LegLight(lightIP,9123)
+else:
+    allLights = leglight.discover(2)
+    light = allLights[0]
 
 __author__ = "kinncj"
 
