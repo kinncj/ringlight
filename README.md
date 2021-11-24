@@ -8,7 +8,9 @@ Control the elgato ring light
 `pip install click`
 
 ### Download
-curl https://raw.githubusercontent.com/kinncj/ringlight/main/elgato > ~/.elgato
+`curl https://raw.githubusercontent.com/kinncj/ringlight/main/elgato > ~/.elgato`
+
+`chmod +x ~/.elgato`
 
 ## Commands
 - brightness
