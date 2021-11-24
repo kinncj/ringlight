@@ -1,11 +1,16 @@
 #!/bin/env python3
+import os
 import leglight
 import click
 
-allLights = leglight.discover(2);
-light = allLights[0];
+# Uncomment the lines below if you want to use the discovery method instead of fixed IP Address.
+# allLights = leglight.discover(2)
+# lght = allLights[0]
 
-# light = leglight.LegLight('0.0.0.0',9123); The Ring IP address in case the discover fails
+# The Ring IP address
+lightIP = os.getenv("ELGATO_RING_LIGHT_IP")
+light   = leglight.LegLight(lightIP,9123)
+
 __author__ = "kinncj"
 
 @click.group()
@@ -31,7 +36,7 @@ def temperature(temp):
 @main.command()
 @click.argument('bright')
 def brightness(bright):
-    light.brightness(int(bright));
+    light.brightness(int(bright))
 
 if __name__ == "__main__":
     main()
