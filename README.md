@@ -39,4 +39,4 @@ Usage with StreamDeck
 
 - Download and setup [stresmdeck-ui](https://timothycrosley.github.io/streamdeck-ui/)
 - Configure the the streamdeck to invoke the commands above
-   - ![streamdeck](https://user-images.githubusercontent.com/292542/143156253-4efe79d0-b7b9-4a4e-94a7-f19b4e2467e5.png)
+![streamdeck](https://user-images.githubusercontent.com/292542/143156253-4efe79d0-b7b9-4a4e-94a7-f19b4e2467e5.png)
