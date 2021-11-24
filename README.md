@@ -3,9 +3,9 @@ Control the elgato ring light
 
 ## Setup
 ### Dependencies
-`pip install -U leglight`
+`pip install eglight`
 
-`pip install -U click`
+`pip install lick`
 
 ### Download
 curl https://raw.githubusercontent.com/kinncj/ringlight/main/elgato > ~/.elgato
