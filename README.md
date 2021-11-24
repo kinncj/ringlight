@@ -2,6 +2,9 @@
 Control the elgato ring light
 
 ## Setup
+### One liner
+`curl https://raw.githubusercontent.com/kinncj/ringlight/main/elgato.install | /usr/bin/env python`
+
 ### Dependencies
 `pip install leglight`
 
