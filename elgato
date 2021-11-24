@@ -1,0 +1,37 @@
+#!/bin/env python3
+import leglight
+import click
+
+allLights = leglight.discover(2);
+light = allLights[0];
+
+# light = leglight.LegLight('0.0.0.0',9123); The Ring IP address in case the discover fails
+__author__ = "kinncj"
+
+@click.group()
+def main():
+    """
+    Elgato Ring Commandline
+    """
+    pass
+
+
+@main.command()
+def toggle():
+    if light.isOn == 0:
+        light.on()
+    else:
+        light.off()
+
+@main.command()
+@click.argument('temp')
+def temperature(temp):
+    light.color(int(temp))
+
+@main.command()
+@click.argument('bright')
+def brightness(bright):
+    light.brightness(int(bright));
+
+if __name__ == "__main__":
+    main()
