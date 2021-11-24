@@ -3,7 +3,7 @@ Control the elgato ring light
 
 ## Setup
 ### Dependencies
-`pip install eglight`
+`pip install leglight`
 
 `pip install click`
 
