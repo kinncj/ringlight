@@ -7,6 +7,11 @@ Control the elgato ring light
 
 `pip install click`
 
+### Exporting your light ip (Non-discovery mode)
+`echo 'export ELGATO_RING_LIGHT_IP=THE_IP_ADDRESS >> ~/.your_shell_file`
+
+`echo 'export ELGATO_RING_LIGHT_IP=192.168.0.2 >> ~/.bash_profile`
+
 ### Download
 `curl https://raw.githubusercontent.com/kinncj/ringlight/main/elgato > ~/.elgato`
 
