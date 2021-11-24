@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+import os
+
+shell     = os.getenv("SHELL")
+shellfile = "~/.bashrc"
+
+if "zsh" in shell:
+    shellfile = "~/.zshrc"
+
+os.system("pip install leglight")
+os.system("pip install click")
+os.system("curl https://raw.githubusercontent.com/kinncj/ringlight/main/elgato > ~/.elgato")
+os.system("chmod +x ~/.elgato")
+os.system("~/.elgato")
