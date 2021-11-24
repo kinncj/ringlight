@@ -5,20 +5,21 @@ Control the elgato ring light
 ### One liner
 `curl https://raw.githubusercontent.com/kinncj/ringlight/main/elgato.install | /usr/bin/env python`
 
-### Dependencies
+### Manual setup
+#### Dependencies
 `pip install leglight`
 
 `pip install click`
 
 
-### Exporting your light ip (OPTIONAL)
+#### Exporting your light ip (OPTIONAL)
 **Use this method if you're having trouble to use Bonjour/Multicast**
 
 `echo 'export ELGATO_RING_LIGHT_IP=THE_IP_ADDRESS '>> ~/.your_shell_file`
 
 `echo 'export ELGATO_RING_LIGHT_IP=192.168.0.2' >> ~/.bash_profile`
 
-### Download
+#### Download
 `curl https://raw.githubusercontent.com/kinncj/ringlight/main/elgato > ~/.elgato`
 
 `chmod +x ~/.elgato`
