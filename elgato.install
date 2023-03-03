@@ -7,10 +7,10 @@ shell_file = "~/.bashrc"
 if "zsh" in shell:
     shell_file = "~/.zshrc"
 
-use_static_ip = raw_input("Does your Ring Light have an static IP address?(y/n)\n")
+use_static_ip = input("Does your Ring Light have an static IP address?(y/n)\n")
 
 if use_static_ip == "y":
-    ip_address = raw_input("What is your Ring Light IP address?\n")
+    ip_address = input("What is your Ring Light IP address?\n")
     os.system("echo 'export ELGATO_RING_LIGHT_IP={} '>> {}".format(ip_address, shell_file))
 
 os.system("pip3 install leglight")
